@@ -81,7 +81,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 2rem 0 4rem;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -124,10 +124,38 @@
   line-height: 1.5;
 }
 
+@media (max-width: 850px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
     flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .footer div {
+    padding: 0.5rem 0;
   }
 }
 

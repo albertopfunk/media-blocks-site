@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to{" "}
           <a
-            href="https://shopify.dev"
+            href="https://apps.shopify.com/partners/builtbyte"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +34,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://shopify.dev"
+            href="https://apps.shopify.com/partners/builtbyte"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.card}
@@ -46,7 +47,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://shopify.dev"
+            href="https://apps.shopify.com/partners/builtbyte"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.card}
@@ -59,33 +60,24 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footerNav}>
-          <a
-            href="https://shopify.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Private Policy
-          </a>
+          <Link href="/private-policy">Private Policy</Link>
         </div>
 
         <div className={styles.footerLogoContainer}>
-          <a
-            href="https://shopify.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.footerLogo}
-          >
-            <span className={styles.logoTxt}>Media</span>
-            <span className={styles.logoImg}>
-              <Image
-                src="/media-blocks.svg"
-                alt="media blocks Logo"
-                width={35}
-                height={35}
-              />
-            </span>
-            <span className={styles.logoTxt}>Blocks</span>
-          </a>
+          <Link href="/">
+            <a className={styles.footerLogo}>
+              <span className={styles.logoTxt}>Media</span>
+              <span className={styles.logoImg}>
+                <Image
+                  src="/media-blocks.svg"
+                  alt="media blocks Logo"
+                  width={35}
+                  height={35}
+                />
+              </span>
+              <span className={styles.logoTxt}>Blocks</span>
+            </a>
+          </Link>
         </div>
 
         <div className={styles.footerNav}>
